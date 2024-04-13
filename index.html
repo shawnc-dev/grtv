@@ -51,8 +51,24 @@
 
   <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
   <script>
-    var skaiplayer = videojs('skai-video');
-    var starplayer = videojs('star-video');
+    var skaiplayer = videojs('skai-video',{
+      controlBar: {
+        skipButtons: {
+          forward: 10,
+          backward:10
+        }
+      },
+      playbackRates: [0.5,0.75, 1, 1.5, 2]
+    });
+    var starplayer = videojs('star-video', {
+      controlBar: {
+        skipButtons: {
+          forward: 10,
+          backward:10
+        }
+      },
+      playbackRates: [0.5,0.75, 1, 1.5, 2]
+    });
 
   </script>
 </body>
