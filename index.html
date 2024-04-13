@@ -12,10 +12,8 @@
     class="video-js"
     style="margin-bottom:15px;"
     controls="true"
-    preload="none"
     width="1280"
     height="720"
-    autoplay="false"
     liveui="true"
   >
     <source src="https://skai-live-back.siliconweb.com/media/cambria4/index_bitrate2000K.m3u8" type="application/x-mpegURL" />
@@ -33,10 +31,8 @@
     id="star-video"
     class="video-js"
     controls="true"
-    preload="none"
     width="1280"
     height="720"
-    autoplay="false"
     liveui="true"
   >
     <source src="https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8" type="application/x-mpegURL" />
@@ -58,7 +54,9 @@
           backward:10
         }
       },
-      playbackRates: [0.5,0.75, 1, 1.5, 2]
+      playbackRates: [0.5,0.75, 1, 1.5, 2],
+      autoplay: false,
+      preload:'none'
     });
     var starplayer = videojs('star-video', {
       controlBar: {
@@ -67,7 +65,9 @@
           backward:10
         }
       },
-      playbackRates: [0.5,0.75, 1, 1.5, 2]
+      playbackRates: [0.5,0.75, 1, 1.5, 2],
+      autoplay: false,
+      preload:'none'
     });
 
   </script>
