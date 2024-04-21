@@ -45,6 +45,28 @@
     </p>
   </video>
 
+
+ <h5>MEGA</h5>
+  <video
+    id="mega-video"
+    class="video-js"
+    style="margin-bottom:15px;"
+    controls="true"
+    width="1280"
+    height="720"
+    liveui="true"
+  >
+    <source src="https://c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8" type="application/x-mpegURL" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+
   <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
   <script>
     var skaiplayer = videojs('skai-video',{
@@ -69,6 +91,19 @@
       autoplay: false,
       preload:'none'
     });
+
+var starplayer = videojs('mega-video', {
+      controlBar: {
+        skipButtons: {
+          forward: 10,
+          backward:10
+        }
+      },
+      playbackRates: [0.5,0.75, 1, 1.5, 2],
+      autoplay: false,
+      preload:'none'
+    });
+
 
   </script>
 </body>
